@@ -1,0 +1,165 @@
+/******** Master Page Styling ********/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	color: #fff;
+	overflow-x: hidden;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover, a:focus {
+	color: #e6c30a;
+}
+
+h1,h2 {
+	font-size: 50px;
+}
+
+p {
+	color: #616161;
+	line-height: 18pt;
+	font-size: 14pt;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contain {
+	max-width: 1200px;
+}
+
+
+/******* Styling for Navigation Bar *******/
+
+.nav>li>a:focus, .nav>li>a:hover {
+	color: #e6c30a;
+	background-color: transparent;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+
+.navbar-brand {
+	font-size: 30pt;
+}
+
+.navbar {
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 0px;
+	border-bottom: 6px solid #e6c30a;
+	background-color: #333;
+	margin: 0;
+	width: auto;
+	font-family: 'Unica One', cursive;
+	-webkit-font-smoothing: antialiased;
+	font-size: 18px;
+}
+
+.icon-bar {
+	background-color: #fff;
+}
+
+#letter {
+	position: absolute;
+    left: 26px;
+    top: 20px;
+}
+
+section {
+	padding: 0 10px;
+	height: calc(100vh + 53px);
+}
+
+@media screen and (min-width: 600px) {
+	section{
+		line-height: 18pt;
+		padding: 110px 0 130px 0;
+	}
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-head {
+	align-items: center;
+	margin: 25px 0 75px 0;
+	width: 100%;
+	height: 4px;
+	background-color: #e6c30a;
+}
+
+/*********** Styling for the Home Page ************/
+
+#Home {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(http://sfwallpaper.com/images/black-and-white-photography-desktop-backgrounds-30.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: #fff;
+}
+
+.highlight {
+	color: #e6c30a;
+}
+
+@media only screen and (min-width: 960px){
+	#btn-main {
+		font-size: 18pt;
+	}
+}
+
+#btn-main {
+	background-color: rgba(92, 92, 92, 0.8);
+	color: #fff;
+	border-radius: 0px;
+	border: 2px solid #fff;
+}
+
+#btn-main:hover {
+	background-color: #e6c30a;
+	border: 2px solid #e6c30a;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+
+@media only screen and (min-width: 600px) {
+	.text {
+		font-size: 32pt;
+		line-height: 36pt;
+		pointer-events: none;
+	}
+}
+
+/****** Styling for the About Page ******/
+
+#title {
+	text-transform: uppercase;
+	color: #e6c30a;
+	font-size: 32pt;
+	font-weight: bold;
+	margin-bottom: -20px;
+}
+
+p>a {
+	color: #333;
+	font-weight: bold;
+}
+
+a:hover, a:focus {
+	color: #e6c30a;
+	text-decoration: none;
+}
