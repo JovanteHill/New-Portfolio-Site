@@ -1,67 +1,204 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Bootstrap 4-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Unica+One&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!--CSS/JS-->
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/form.js"></script>
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Unica+One&amp;subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="style-index.css" rel="stylesheet">
-</head>
+	<body>
+		<!--Navigation Bar-->
+		<nav class="navbar navbar-expand-sm navbar-dark fixed-top" role="navigation">
+			<!--Brand-->
+			<a class="navbar-brand" href="#work">JH</a>
 
-<body>
-	<div>
-	<nav class="navbar navbar-fixed-top navbar-expand-lg" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbartog">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button><!--Ends Toggle Button-->
-				<a class="navbar-brand" href="#">JH</a>
-			</div><!--Ends Navbar-header-->
-			<div class="collapse navbar-collapse" id="navbartog">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#Home">Home</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="">Work</a></li>
-					<li><a href="">Contact</a></li>
+			<!--Toggler/collapsible Button-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-bar">
+				<span class="navbar-toggler-icon"></span>
+			</button><!--Ends Toggler Button-->
+
+			<!--Navigation Links-->
+			<div class="collapse navbar-collapse justify-content-end" id="collapse-bar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#work" data-toggle="collapse" data-target=".navbar-collapse.show">Work</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a></li>
 				</ul><!--Ends List-->
-			</div><!--Ends Nav-Collapse-->
-		</div><!--Ends Container-->
-	</nav><!--Ends navbar-->
-</div>
+			</div><!--Ends Collapse-->
 
-	<section name="Home" class="flex" id="Home">
-		<div class="flex" id="intro">
-			<div class="text">
+			<!--Smooth scrolling JS-->
+			<script src="js/scripts.js"></script>
+		</nav><!--Ends Nav-->
+
+		<!--Home Page-->
+		<div class="jumbotron jumbotro-fluid" id="home">
+			<div class="container" id="intro">
 				<h2>Hello, I'm <span class="highlight">Jovante Hill</span>.<br />I'm a front-end web developer.</h2>
-			</div>
-			<a href="#About" class="btn btn-default btn-lg" id="btn-main" role="button">View my work</a>
-		</div><!--Ends flex-->
-	</section><!--Ends Home Section-->
+				<a href="#work" class="btn btn-outline-warning btn-lg" id="btn-main" role="button">View my work</a>
+			</div><!--Ends Container-->
+			<script src="js/scripts.js"></script>
+		</div><!--Ends Home-->
 
-	<section name="About" class="flex" id="About">
-		<div class="container-fluid contain flex">
-			<div class="row">
-				<div class="col-sm-12 slide-in" id="title">About<br /><hr class="section-head" /></div>
-			</div><!--Ends row-->
-			<div class="row">
-				<div class="col-sm-6 center">
-					<img src="Img/self.jpg" class="img-circle img-responsive center" />
-					<h3>Who am I</h3>
-					<p>I currently work remote as a Sr. Election Administrator for <a href="http://www.everyonecounts.com" target="_blank">Everyone Counts</a> in San Diego, CA. I have a serious passion for taking a concept and bringing it to life, along with a hunger to learn the proper techniques, methods, and skills to be a valuble yet diverse asset for any project I am working on. If you had to ask me what my favorite aspect on web development was...I would say the frontend with a focus on creating simple and intuitive user experiences.</p>
-				</div>
-				<div class="col-sm-6">
-				</div>
-			</div><!--Ends row-->
+		<!--About Page-->
+		<div class="jumbotron jumbotro-fluid" id="about">
+			<div class="container-fluid">
+				<!--Page Header-->
+				<div class="row">
+					<div class="col-sm-12 page-header">About<br /><hr class="header-bar" /></div>
+					<!--comment to close-->
+				</div><!--Ends row-->
 
+				<!--Page Info-->
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="Img/self.jpg" class="img-fluid rounded-circle mx-auto d-block" />
+						<h3 class="sec-header">Who am I</h3>
+						<p>I currently work remote as a Sr. Election Administrator for <a href="http://www.everyonecounts.com" target="_blank">Everyone Counts</a> in San Diego, CA. I have a serious passion for taking a concept and bringing it to life. Along with a hunger to learn the proper techniques, methods, and skills I strive to be a valuble and resourceful asset for any team or project. If you had to ask me what my favorite aspect on web development was...I would say the front-end with a focus on creating simple and intuitive user experiences.</p>						
+					</div>
+					<div class="col-sm-6">
+						<div class="d-flex flex-column">
+							<div class="d-flex flex-row">
+								<div class="p-3">
+									<div class="hex-shape">
+										<i class="fas fa-drafting-compass"></i>
+									</div>
+								</div><!--Ends P-3-->
+								<div class="p-3 desc">
+									<h3 class="sec-header min">Intuitive</h3>
+									<p>I design layout with a focus on easy to use, simple UX/UI.</p>
+								</div><!--Ends P-3-->
+							</div><!--Ends Flex Row-->
+							<div class="d-flex flex-row">
+								<div class="p-3">
+									<div class="hex-shape">
+										<i class="fas fa-mobile-alt"></i>
+									</div>
+								</div><!--Ends P-3-->
+								<div class="p-3 desc">
+									<h3 class="sec-header min">Responsive</h3>
+									<p>Doesn't matter the size. My designs will work on any device.</p>							
+								</div><!--Ends P-3-->
+							</div><!--Ends Flex Row-->
+							<div class="d-flex flex-row">
+								<div class="p-3">
+									<div class="hex-shape">
+										<i class="far fa-eye"></i>
+									</div>
+								</div><!--Ends P-3-->
+								<div class="p-3 desc">
+									<h3 class="sec-header min">Dynamic</h3>
+									<p>Don't want to be static? Let me make your site come to life.</p>
+								</div>	<!--Ends P-3-->						
+							</div><!--Ends Flex Row--> 
+						</div><!--Ends Flex Column-->
+					</div>
+				</div><!--Ends Row-->
+			</div><!--Ends Container-->
+		</div><!--Ends About-->
 
-		</div>
-	</section><!--Ends About Section-->
-</body>
+		<!--Work Page-->
+		<div class="jumbotron jumbotro-fluid" id="work">
+			<div class="container-fluid">
+				<!--Page Header-->
+				<div class="row">
+					<div class="col-sm-12 page-header">Work<br /><hr class="header-bar" /></div>
+				</div><!--Ends row-->
 
+				<!--Page Info-->
+
+				<!--1st Row-->
+				<div class="row">
+					<div class="col-sm logos">
+						<img src="Img/oscars.jpg" class="img-fluid logo-img" alt="oscars-logo" height="auto" width="300" />
+					</div><!--Ends Img-->
+					<div class="col-sm logos">
+						<img src="Img/Emmys.png" class="img-fluid logo-img" alt="emmys-logo" height="auto" width="300" />
+					</div><!--Ends Img-->
+					<div class="col-sm logos">
+						<img src="Img/WMO.png" class="img-fluid logo-img" alt="wmo-logo" height="auto" width="300" />
+					</div><!--Ends Img-->
+				</div><!--Ends Row-->
+
+				<!--2nd Row-->
+				<div class="row">
+					<div class="col-sm logos">
+						<img src="Img/calgary-co-op.jpg" class="img-fluid logo-img" alt="calagry-co-op-logo" height="auto" width="300" />
+					</div><!--Ends Img-->
+					<div class="col-sm logos">
+						<img src="Img/E1C.png" class="img-fluid logo-img" alt="e1c-logo" height="auto" width="300" />
+					</div><!--Ends Img-->
+					<div class="col-sm logos">
+						<img src="Img/HiDef.jpg" class="img-fluid logo-img" alt="hidefvisuals-logo" height="auto" width="300" />
+					</div><!--Ends Img-->
+				</div><!--Ends Row-->
+			</div><!--Ends Container-->
+		</div><!--Ends Work-->
+
+		<!--Contact Page-->
+		<div class="jumbotron jumbotro-fluid" id="contact">
+			<div class="container-fluid">
+
+				<!--Page Header-->
+				<div class="row">
+					<div class="col-sm-12 page-header">Contact<br /><hr class="header-bar" /></div>
+					<!--comment to close-->
+				</div><!--Ends Row-->
+
+				<!--Contact Form-->
+				<div class="row">
+					<div class="col-sm-8 offset-sm-2">
+						<form role="form" id="contact-form" data-toggle="validator">
+							<p id="question">Have a question or want to work together?</p><br />
+							<input type="text" class="form-control" id="name" placeholder="Name" required>
+							<div class="help-block with-errors"></div>
+							<input type="email" class="form-control" id="email" placeholder="Enter email" required>
+							<div class="help-block with-errors"></div>
+							<textarea class="form-control" rows="5" id="message" placeholder="Your Message" required></textarea>
+							<div class="help-block with-errors"></div>
+							<input class="btn btn-outline-warning btn-lg" type="submit" id="form-submit" value="SUBMIT">
+							<div id="msgSubmit" class="h3 text-center hidden" id="success-msg"></div>
+						</form><!--Ends Form-->
+						<script type="text/javascript" src="js/validator.min.js"></script>
+						<script src="js/form.js"></script>
+					</div>
+				</div><!--Ends Row-->
+			</div><!--Ends Container-->
+		</div><!--Ends Contact-->
+
+		<!--Footer-->
+		<div class="jumbotron-fluid text-center" id="footer">
+			<div class="container">
+				<a href="#home" class="btn btn-outline-warning bt-sm" id="ft-btn" role="button"><i class="fas fa-angle-up" id="arrow-up"></i></a>
+				<div class="row">
+					<div class="col-sm ft-icon">
+						<a href="https://www.facebook.com/jovante" target="_blank"><i class="fab fa-facebook-f ft-icon-lk"></i></a>
+					</div>
+					<div class="col-sm ft-icon">
+						<a href="https://www.instagram.com/jovantehill/" target="_blank"><i class="fab fa-instagram ft-icon-lk"></i></a>
+					</div>
+					<div class="col-sm ft-icon">
+						<a href="www.linkedin.com/in/jovantehill" target="_blank"><i class="fab fa-linkedin-in ft-icon-lk"></i></a>
+					</div>
+					<div class="col-sm ft-icon">
+						<a href="https://github.com/JovanteHill" target="_blank"><i class="fab fa-github ft-icon-lk"></i></a>
+					</div>														
+				</div><!--Ends Row-->
+				<script src="js/scripts.js"></script>
+				<p id="copyright">&middot;Jovante Hill &copy; 2018 &middot;
+			</div><!--Ends Container-->
+		</div><!--Ends Footer-->
+
+	</body>
 </html>
